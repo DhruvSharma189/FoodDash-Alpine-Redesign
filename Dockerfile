@@ -16,8 +16,8 @@ WORKDIR /app
 
 COPY --from=build /app/target/fooddash-1.0.0.jar app.jar
 
-ENV SERVER_PORT=10005
+ENV SERVER_PORT=10000
 
-EXPOSE 10005
+EXPOSE 10000
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
